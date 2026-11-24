@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: '22'
       - name: Validate v2 study content
-        run: node law-study/tests/validate.mjs
+        run: |
+          node law-study/tests/validate.mjs
+          node --test law-study/tests/sync-regression.test.mjs
       - name: Build bundled APK
         working-directory: law-study/android
         run: gradle --no-daemon :app:assembleDebug
@@ -44,10 +46,12 @@ jobs:
             SHA256SUMS.txt
           retention-days: 30
   web:
+    needs: android
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: read
+      actions: read
       pages: write
       id-token: write
     environment:
@@ -55,6 +59,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: FakaoTongxing-Android-v2.0
+          path: law-study/web/downloads
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
