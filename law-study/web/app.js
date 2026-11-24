@@ -239,7 +239,7 @@ function icon(n) {
 
 function shell(content) {
   $('#app').innerHTML =
-    '<header><div><span class="mark">法</span><strong>法考同行</strong> <small>三人学习小组</small></div>' +
+    '<header><div><span class="mark">法</span><strong>法考同行</strong></div>' +
     '<div class="row"><span class="pill gray">' +
     esc(user) +
     '</span><button class="textbutton" data-action="logout">退出</button></div></header>' +

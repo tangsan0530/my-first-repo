@@ -1,4 +1,4 @@
-const CACHE = 'law-study-v2-20261124-final';
+const CACHE = 'law-study-v2-20261124-label';
 const ASSETS = [
   './',
   './index.html',
