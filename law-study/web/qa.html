@@ -1,0 +1,68 @@
+<!doctype html><meta charset="utf-8"><title>Cloud verification</title>
+<h1>Law Study v2 cloud verification</h1><p><label>zyl 密码 <input type="password" id="pw-zyl"></label></p><p><label>rczy 密码 <input type="password" id="pw-rczy"></label></p><p><label>cl 密码 <input type="password" id="pw-cl"></label></p><button id="run">运行云端回归</button><pre id="output">等待运行</pre>
+<script type="module">
+const out=document.querySelector('#output');
+const endpoint='https://ktbmlzkefmchiourjjfc.supabase.co/functions/v1/law-study-api';
+const key='sb_publishable_w_Qapu_FFaM4uvdOUYDMeA_-vDddqp3';
+const log = text => out.textContent += text+'\n';
+const sessions={}, testIds=[], originals={};
+async function call(action,body={},name) {
+  const r=await fetch(endpoint,{method:'POST',headers:{apikey:key,'Content-Type':'application/json',...(name?{Authorization:'Bearer '+sessions[name].access_token}:{})},body:JSON.stringify({action,...body})});
+  return {status:r.status,...await r.json()};
+}
+function check(ok,label) {if(!ok)throw Error(label);log('PASS '+label);}
+document.querySelector('#run').onclick=async()=>{
+document.querySelector('#run').disabled=true;out.textContent='';
+const marker='__qa_v2_'+Date.now();
+try {
+ const bank={"version":"2026.11.24-v2.0","papers":[{"id":2,"title":"综合训练 02","questions":["CRP-0002","CIP-0002","ADM-0002","BUS-0002","XFT-0002","CON-0002","JUR-0002","ECO-0002","IPR-0002","CLH-0002","ETH-0002","LAB-0002","INT-0002","IPL-0002","IEL-0002","ENV-0002","CIV-0003","CRI-0003","CRP-0003","CIP-0003"],"total":20}],"questions":[{"id":"CRP-0002","answer":[1]},{"id":"CIP-0002","answer":[0,2,3]},{"id":"ADM-0002","answer":[1]},{"id":"BUS-0002","answer":[2]},{"id":"XFT-0002","answer":[2]},{"id":"CON-0002","answer":[2]},{"id":"JUR-0002","answer":[0]},{"id":"ECO-0002","answer":[1]},{"id":"IPR-0002","answer":[1]},{"id":"CLH-0002","answer":[3]},{"id":"ETH-0002","answer":[0]},{"id":"LAB-0002","answer":[1]},{"id":"INT-0002","answer":[1]},{"id":"IPL-0002","answer":[1]},{"id":"IEL-0002","answer":[1]},{"id":"ENV-0002","answer":[1]},{"id":"CIV-0003","answer":[2]},{"id":"CRI-0003","answer":[2]},{"id":"CRP-0003","answer":[0,1,2]},{"id":"CIP-0003","answer":[0]}]};
+ const map=new Map(bank.questions.map(q=>[q.id,q]));
+ const paper=bank.papers.find(p=>p.questions.some(id=>map.get(id).answer.length>1));
+ const perfect=paper.questions.map(id=>map.get(id).answer);
+ check((await call('scores')).status===401,'未登录拒绝访问');
+ for(const name of ['zyl','rczy','cl']) {
+  const v=await call('login',{username:name,password:document.querySelector('#pw-'+name).value});
+  check(v.status===200&&v.username===name,'登录 '+name); sessions[name]=v.session;
+  const before=await call('progress-get',{},name);check(before.status===200,'读取进度 '+name);originals[name]=before.data;
+  const data=structuredClone(before.data);data.lessons??={};data.notes??={};data.lessons[marker]=Date.now();data.notes[marker]={text:'v2同步验证 '+name,at:Date.now()};
+  check((await call('progress-save',{data},name)).status===200,'保存章节和笔记 '+name);
+  const after=await call('progress-get',{},name);
+  check(after.data.lessons[marker]&&after.data.notes[marker].text==='v2同步验证 '+name,'云端往返及账号隔离 '+name);
+  const id=crypto.randomUUID();testIds.push(id);
+  let answers=structuredClone(perfect);let expected=20;
+  if(name==='rczy'){const idx=answers.findIndex(a=>a.length>1);answers[idx].pop();expected=19;}
+  if(name==='cl'){answers[0]=[];answers[1]=[];expected=18;}
+  const score=await call('submit',{id,set_id:paper.id,answers,version:bank.version},name);
+  check(score.status===200&&score.correct===expected,'服务端精确计分 '+name+' '+expected+'/20');
+  const dup=await call('submit',{id,set_id:paper.id,answers:perfect.map(()=>[]),version:bank.version},name);
+  check(dup.status===200&&dup.correct===expected,'重复UUID保留首次成绩 '+name);
+ }
+ for(const name of ['zyl','rczy','cl']) {
+  const board=await call('scores',{version:bank.version},name);
+  check(board.status===200&&testIds.every(id=>board.scores.some(s=>s.id===id&&s.total===20&&s.bank_version===bank.version)),'三人互看同套成绩 '+name);
+  check(testIds.every(id=>board.scores.filter(s=>s.id===id).length===1),'去重后仅一条 '+name);
+ }
+ const conflict=await call('submit',{id:testIds[0],set_id:paper.id,answers:perfect,version:bank.version},'cl');
+ check(conflict.status===409,'不能覆盖其他账号答卷');
+ for(const bad of [perfect.slice(1),perfect.map((a,i)=>i===0?[0,0]:a),perfect.map((a,i)=>i===0?[4]:a)]) {
+  check((await call('submit',{id:crypto.randomUUID(),set_id:paper.id,answers:bad,version:bank.version},'zyl')).status===400,'非法答卷拒绝');
+ }
+ const legacyId=crypto.randomUUID();testIds.push(legacyId);
+ const old=await call('submit',{id:legacyId,set_id:150,answers:Array(30).fill(-1)},'zyl');
+ check(old.status===200&&old.correct===0,'旧版30题APK兼容');
+ const oldBoard=await call('scores',{},'zyl');const newBoard=await call('scores',{version:bank.version},'zyl');
+ check(oldBoard.scores.some(s=>s.id===legacyId&&s.total===30)&&!newBoard.scores.some(s=>s.id===legacyId)&&testIds.slice(0,3).every(id=>!oldBoard.scores.some(s=>s.id===id)),'新旧题库成绩隔离');
+ log('ALL PASS');
+}catch(e){log('FAIL '+e.message);}
+finally {
+ for(const name of Object.keys(originals)) {
+  try {const current=(await call('progress-get',{},name)).data; delete current.lessons?.[marker];delete current.notes?.[marker];
+   if(!originals[name].lessons&&Object.keys(current.lessons||{}).length===0)delete current.lessons;
+   if(!originals[name].notes&&Object.keys(current.notes||{}).length===0)delete current.notes;
+   check((await call('progress-save',{data:current},name)).status===200,'已清理临时进度 '+name);
+  }catch(e){log('CLEANUP ERROR '+name+' '+e.message);}
+ }
+ log('TEST_IDS '+JSON.stringify(testIds));
+}
+};
+</script>

@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const root = new URL('../web/', import.meta.url);
+const lessons=JSON.parse(fs.readFileSync(new URL('lessons.json',root)));
+const bank=JSON.parse(fs.readFileSync(new URL('practice.json',root)));
+assert.equal(lessons.subjects.length,18);
+const chapters=lessons.subjects.flatMap(s=>s.chapters);
+assert.equal(chapters.length,177);
+assert.equal(new Set(chapters.map(c=>c.id)).size,177);
+assert.equal(bank.questions.length,1000);
+assert.equal(bank.papers.length,50);
+const qs=new Map(bank.questions.map(q=>[q.id,q]));
+assert.equal(qs.size,1000);
+const assigned=bank.papers.flatMap(p=>{assert.equal(p.questions.length,20);return p.questions});
+assert.equal(new Set(assigned).size,1000);
+for(const q of bank.questions){assert(chapters.some(c=>c.id===q.chapter));assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert.equal(q.optionAnalysis.length,4);assert(q.optionAnalysis.every(Boolean));assert(q.answer.length>0);assert(q.answer.every(x=>Number.isInteger(x)&&x>=0&&x<=3));assert.equal(new Set(q.answer).size,q.answer.length);assert(q.basis?.every(b=>b.url&&b.article));}
+assert(assigned.every(id=>qs.has(id)));
+const app=fs.readFileSync(new URL('app.js',root),'utf8');
+assert(!/service_role|zyl123|rczy123|cl123/.test(app));
+console.log('PASS: 18 subjects, 177 chapters, 1000 unique questions, 50 disjoint papers, no privileged client credentials');

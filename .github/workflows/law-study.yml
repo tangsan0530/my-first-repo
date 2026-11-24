@@ -19,6 +19,11 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate v2 study content
+        run: node law-study/tests/validate.mjs
       - name: Build bundled APK
         working-directory: law-study/android
         run: gradle --no-daemon :app:assembleDebug
@@ -26,14 +31,16 @@ jobs:
         run: |
           test -s law-study/android/app/build/outputs/apk/debug/app-debug.apk
           unzip -l law-study/android/app/build/outputs/apk/debug/app-debug.apk | grep 'assets/bank.json'
+          unzip -l law-study/android/app/build/outputs/apk/debug/app-debug.apk | grep 'assets/lessons.json'
+          unzip -l law-study/android/app/build/outputs/apk/debug/app-debug.apk | grep 'assets/practice.json'
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --print-certs law-study/android/app/build/outputs/apk/debug/app-debug.apk
-          cp law-study/android/app/build/outputs/apk/debug/app-debug.apk FakaoTongxing-Beta.apk
-          sha256sum FakaoTongxing-Beta.apk > SHA256SUMS.txt
+          cp law-study/android/app/build/outputs/apk/debug/app-debug.apk FakaoTongxing-v2.0.apk
+          sha256sum FakaoTongxing-v2.0.apk > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: FakaoTongxing-Android-Beta
+          name: FakaoTongxing-Android-v2.0
           path: |
-            FakaoTongxing-Beta.apk
+            FakaoTongxing-v2.0.apk
             SHA256SUMS.txt
           retention-days: 30
   web:
