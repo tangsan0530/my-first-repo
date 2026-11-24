@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {normalizeAnswer,gradeQuestion,gradePaper,validateBank} from './engine-v2.mjs';
+const multi={id:'m',type:'multiple',answer:[0,2],prompt:'q',options:['a','b','c','d'],optionAnalysis:['a','b','c','d'],basis:[{url:'https://example.org',article:'1'}]};
+assert.equal(gradeQuestion(multi,[2,0]),true);
+for(const a of [[0],[0,1,2],[]])assert.equal(gradeQuestion(multi,a),false);
+assert.throws(()=>normalizeAnswer([0,0]));assert.throws(()=>normalizeAnswer([4]));assert.throws(()=>normalizeAnswer(['0']));
+assert.throws(()=>gradeQuestion({...multi,type:'single',answer:[0,2]},[0]));
+const qs=Array.from({length:20},(_,i)=>({...multi,id:String(i)})),lookup=new Map(qs.map(x=>[x.id,x])),paper={id:1,questions:qs.map(x=>x.id)};
+assert.deepEqual(gradePaper(paper,Array.from({length:20},(_,i)=>i<12?[0,2]:[]),lookup),{correct:12,total:20,score:60});
+assert.throws(()=>gradePaper({...paper,questions:paper.questions.slice(1)},[],lookup));
+assert.throws(()=>gradePaper({...paper,questions:Array(20).fill('0')},Array(20).fill([]),lookup));
+assert.throws(()=>gradePaper(paper,Array(19).fill([]),lookup));
+assert.deepEqual(validateBank({questions:qs,papers:[paper]}),[]);
+assert.ok(validateBank({questions:qs,papers:[{...paper,questions:[...paper.questions.slice(0,19),'missing']}]}).length);
+console.log('20-question grading: PASS; multi-select exact match, unanswered, bad inputs, duplicates and missing references verified.');

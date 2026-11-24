@@ -1,0 +1,1968 @@
+{
+  "asOf": "2026-11-24",
+  "target": 1500,
+  "totalQuestions": 210,
+  "totalChapters": 101,
+  "typeCounts": {
+    "single": 113,
+    "multiple": 80,
+    "indefinite": 17
+  },
+  "findings": [
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIV-0030"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRI-0030"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CRP-0030"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CIP-0030"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "IPR-0030"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0001"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0002"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0003"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0004"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0005"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0006"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0007"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0008"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0009"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0010"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0011"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0012"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0013"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0014"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0015"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0016"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0017"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0018"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0019"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0020"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0021"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0022"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0023"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0024"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0025"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0026"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0027"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0028"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0029"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "XFT-0030"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0001",
+      "chapter": "CON-01"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0001"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0002",
+      "chapter": "CON-01"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0002"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0003",
+      "chapter": "CON-01"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0003"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0004",
+      "chapter": "CON-01"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0004"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0005",
+      "chapter": "CON-02"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0005"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0006",
+      "chapter": "CON-02"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0006"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0007",
+      "chapter": "CON-02"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0007"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0008",
+      "chapter": "CON-02"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0008"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0009",
+      "chapter": "CON-03"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0009"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0010",
+      "chapter": "CON-03"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0010"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0011",
+      "chapter": "CON-03"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0011"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0012",
+      "chapter": "CON-03"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0012"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0013",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0013"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0014",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0014"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0015",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0015"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0016",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0016"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0017",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0017"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0018",
+      "chapter": "CON-04"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0018"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0019",
+      "chapter": "CON-05"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0019"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0020",
+      "chapter": "CON-05"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0020"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0021",
+      "chapter": "CON-05"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0021"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0022",
+      "chapter": "CON-05"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0022"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0023",
+      "chapter": "CON-05"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0023"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0024",
+      "chapter": "CON-06"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0024"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0025",
+      "chapter": "CON-06"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0025"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0026",
+      "chapter": "CON-06"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0026"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0027",
+      "chapter": "CON-07"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0027"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0028",
+      "chapter": "CON-07"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0028"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0029",
+      "chapter": "CON-07"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0029"
+    },
+    {
+      "kind": "missing-chapter",
+      "id": "CON-0030",
+      "chapter": "CON-08"
+    },
+    {
+      "kind": "independent-review-required",
+      "id": "CON-0030"
+    }
+  ],
+  "shortChapters": [
+    {
+      "id": "CIV-01",
+      "subject": "民法",
+      "chars": 581,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-02",
+      "subject": "民法",
+      "chars": 588,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-03",
+      "subject": "民法",
+      "chars": 603,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-04",
+      "subject": "民法",
+      "chars": 579,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-05",
+      "subject": "民法",
+      "chars": 558,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-06",
+      "subject": "民法",
+      "chars": 551,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-07",
+      "subject": "民法",
+      "chars": 539,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-08",
+      "subject": "民法",
+      "chars": 518,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIV-09",
+      "subject": "民法",
+      "chars": 535,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-10",
+      "subject": "民法",
+      "chars": 536,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-11",
+      "subject": "民法",
+      "chars": 530,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-12",
+      "subject": "民法",
+      "chars": 574,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-13",
+      "subject": "民法",
+      "chars": 510,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-14",
+      "subject": "民法",
+      "chars": 538,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-15",
+      "subject": "民法",
+      "chars": 531,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-16",
+      "subject": "民法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-17",
+      "subject": "民法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-18",
+      "subject": "民法",
+      "chars": 517,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-19",
+      "subject": "民法",
+      "chars": 544,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-20",
+      "subject": "民法",
+      "chars": 569,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRI-01",
+      "subject": "刑法",
+      "chars": 500,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-02",
+      "subject": "刑法",
+      "chars": 475,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-03",
+      "subject": "刑法",
+      "chars": 481,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-04",
+      "subject": "刑法",
+      "chars": 446,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-05",
+      "subject": "刑法",
+      "chars": 474,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-06",
+      "subject": "刑法",
+      "chars": 440,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-07",
+      "subject": "刑法",
+      "chars": 466,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-08",
+      "subject": "刑法",
+      "chars": 422,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-09",
+      "subject": "刑法",
+      "chars": 450,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRI-10",
+      "subject": "刑法",
+      "chars": 438,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-01",
+      "subject": "刑事诉讼法",
+      "chars": 662,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-02",
+      "subject": "刑事诉讼法",
+      "chars": 599,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-03",
+      "subject": "刑事诉讼法",
+      "chars": 646,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-04",
+      "subject": "刑事诉讼法",
+      "chars": 597,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-05",
+      "subject": "刑事诉讼法",
+      "chars": 622,
+      "missingQuestions": false
+    },
+    {
+      "id": "CRP-06",
+      "subject": "刑事诉讼法",
+      "chars": 642,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-07",
+      "subject": "刑事诉讼法",
+      "chars": 631,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-08",
+      "subject": "刑事诉讼法",
+      "chars": 616,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-09",
+      "subject": "刑事诉讼法",
+      "chars": 574,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-10",
+      "subject": "刑事诉讼法",
+      "chars": 609,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-11",
+      "subject": "刑事诉讼法",
+      "chars": 586,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-12",
+      "subject": "刑事诉讼法",
+      "chars": 633,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-01",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 557,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-02",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 501,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-03",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 464,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-04",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 462,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-05",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 437,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-06",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 465,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-07",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 461,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-08",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 481,
+      "missingQuestions": false
+    },
+    {
+      "id": "CIP-09",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 474,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-10",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 463,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-11",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 475,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-12",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 436,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-13",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 420,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-14",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 428,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-15",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 434,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-16",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 442,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-17",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 445,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-18",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 457,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-19",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 441,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-20",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 464,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-21",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 471,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-22",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 481,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-01",
+      "subject": "商法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-02",
+      "subject": "商法",
+      "chars": 514,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-03",
+      "subject": "商法",
+      "chars": 461,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-04",
+      "subject": "商法",
+      "chars": 481,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-05",
+      "subject": "商法",
+      "chars": 458,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-06",
+      "subject": "商法",
+      "chars": 499,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-07",
+      "subject": "商法",
+      "chars": 490,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-08",
+      "subject": "商法",
+      "chars": 465,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-09",
+      "subject": "商法",
+      "chars": 495,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-10",
+      "subject": "商法",
+      "chars": 447,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-11",
+      "subject": "商法",
+      "chars": 464,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-12",
+      "subject": "商法",
+      "chars": 463,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-13",
+      "subject": "商法",
+      "chars": 506,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-14",
+      "subject": "商法",
+      "chars": 466,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-15",
+      "subject": "商法",
+      "chars": 526,
+      "missingQuestions": true
+    },
+    {
+      "id": "IPR-02",
+      "subject": "知识产权法",
+      "chars": 1159,
+      "missingQuestions": false
+    },
+    {
+      "id": "IPR-03",
+      "subject": "知识产权法",
+      "chars": 1179,
+      "missingQuestions": false
+    },
+    {
+      "id": "IPR-04",
+      "subject": "知识产权法",
+      "chars": 1155,
+      "missingQuestions": true
+    },
+    {
+      "id": "IPR-05",
+      "subject": "知识产权法",
+      "chars": 1151,
+      "missingQuestions": true
+    },
+    {
+      "id": "XFT-01",
+      "subject": "习近平法治思想",
+      "chars": 342,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-02",
+      "subject": "习近平法治思想",
+      "chars": 299,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-03",
+      "subject": "习近平法治思想",
+      "chars": 299,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-04",
+      "subject": "习近平法治思想",
+      "chars": 298,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-05",
+      "subject": "习近平法治思想",
+      "chars": 305,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-06",
+      "subject": "习近平法治思想",
+      "chars": 282,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-07",
+      "subject": "习近平法治思想",
+      "chars": 296,
+      "missingQuestions": false
+    },
+    {
+      "id": "XFT-08",
+      "subject": "习近平法治思想",
+      "chars": 299,
+      "missingQuestions": false
+    },
+    {
+      "id": "JUR-01",
+      "subject": "法理学",
+      "chars": 290,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-02",
+      "subject": "法理学",
+      "chars": 263,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-03",
+      "subject": "法理学",
+      "chars": 279,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-04",
+      "subject": "法理学",
+      "chars": 271,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-05",
+      "subject": "法理学",
+      "chars": 257,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-06",
+      "subject": "法理学",
+      "chars": 280,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-07",
+      "subject": "法理学",
+      "chars": 265,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-08",
+      "subject": "法理学",
+      "chars": 273,
+      "missingQuestions": true
+    }
+  ],
+  "chapterWithoutQuestions": [
+    {
+      "id": "CIV-01",
+      "subject": "民法",
+      "chars": 581,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-09",
+      "subject": "民法",
+      "chars": 535,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-10",
+      "subject": "民法",
+      "chars": 536,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-11",
+      "subject": "民法",
+      "chars": 530,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-12",
+      "subject": "民法",
+      "chars": 574,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-13",
+      "subject": "民法",
+      "chars": 510,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-14",
+      "subject": "民法",
+      "chars": 538,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-15",
+      "subject": "民法",
+      "chars": 531,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-16",
+      "subject": "民法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-17",
+      "subject": "民法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-18",
+      "subject": "民法",
+      "chars": 517,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-19",
+      "subject": "民法",
+      "chars": 544,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIV-20",
+      "subject": "民法",
+      "chars": 569,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-06",
+      "subject": "刑事诉讼法",
+      "chars": 642,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-07",
+      "subject": "刑事诉讼法",
+      "chars": 631,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-08",
+      "subject": "刑事诉讼法",
+      "chars": 616,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-09",
+      "subject": "刑事诉讼法",
+      "chars": 574,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-10",
+      "subject": "刑事诉讼法",
+      "chars": 609,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-11",
+      "subject": "刑事诉讼法",
+      "chars": 586,
+      "missingQuestions": true
+    },
+    {
+      "id": "CRP-12",
+      "subject": "刑事诉讼法",
+      "chars": 633,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-09",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 474,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-10",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 463,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-11",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 475,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-12",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 436,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-13",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 420,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-14",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 428,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-15",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 434,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-16",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 442,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-17",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 445,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-18",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 457,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-19",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 441,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-20",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 464,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-21",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 471,
+      "missingQuestions": true
+    },
+    {
+      "id": "CIP-22",
+      "subject": "民事诉讼法（含仲裁制度）",
+      "chars": 481,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-01",
+      "subject": "商法",
+      "chars": 534,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-02",
+      "subject": "商法",
+      "chars": 514,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-03",
+      "subject": "商法",
+      "chars": 461,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-04",
+      "subject": "商法",
+      "chars": 481,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-05",
+      "subject": "商法",
+      "chars": 458,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-06",
+      "subject": "商法",
+      "chars": 499,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-07",
+      "subject": "商法",
+      "chars": 490,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-08",
+      "subject": "商法",
+      "chars": 465,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-09",
+      "subject": "商法",
+      "chars": 495,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-10",
+      "subject": "商法",
+      "chars": 447,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-11",
+      "subject": "商法",
+      "chars": 464,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-12",
+      "subject": "商法",
+      "chars": 463,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-13",
+      "subject": "商法",
+      "chars": 506,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-14",
+      "subject": "商法",
+      "chars": 466,
+      "missingQuestions": true
+    },
+    {
+      "id": "BUS-15",
+      "subject": "商法",
+      "chars": 526,
+      "missingQuestions": true
+    },
+    {
+      "id": "IPR-04",
+      "subject": "知识产权法",
+      "chars": 1155,
+      "missingQuestions": true
+    },
+    {
+      "id": "IPR-05",
+      "subject": "知识产权法",
+      "chars": 1151,
+      "missingQuestions": true
+    },
+    {
+      "id": "IPR-06",
+      "subject": "知识产权法",
+      "chars": 1228,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-01",
+      "subject": "法理学",
+      "chars": 290,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-02",
+      "subject": "法理学",
+      "chars": 263,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-03",
+      "subject": "法理学",
+      "chars": 279,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-04",
+      "subject": "法理学",
+      "chars": 271,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-05",
+      "subject": "法理学",
+      "chars": 257,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-06",
+      "subject": "法理学",
+      "chars": 280,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-07",
+      "subject": "法理学",
+      "chars": 265,
+      "missingQuestions": true
+    },
+    {
+      "id": "JUR-08",
+      "subject": "法理学",
+      "chars": 273,
+      "missingQuestions": true
+    }
+  ],
+  "outdatedCriminalSource": [],
+  "manualReview": "All questions require independent verification of key, distractors, authoritative original law and effectivity; source-checked is author annotation, not independent review.",
+  "notes": [
+    "2026修订商标法2027-01-01生效；2026-11-24不可将其当已生效",
+    "2026生态环境法典2026-08-15施行",
+    "2026考试公告确定学科，详细考点仍须对照官方大纲原文"
+  ]
+}
